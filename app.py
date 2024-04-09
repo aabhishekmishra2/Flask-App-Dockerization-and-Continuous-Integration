@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore")
 app = Flask(__name__)
 
 
-loaded_model = pickle.load(open("model.pkl", "rb"))
+loaded_model = pickle.load(open("naive_bayes_model.pkl", "rb"))
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
@@ -62,3 +62,8 @@ def homepage():
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5000)
+
+
+
+
+

@@ -8,7 +8,7 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-loaded_classifier = pickle.load(open("Assignment 4/spam_classifier.pkl", "rb"))
+loaded_classifier = pickle.load(open("Assignment 4/naive_bayes_model.pkl", "rb"))
 
 
 def test_spam_scoring_smoke_test():
